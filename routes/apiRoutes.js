@@ -4,7 +4,6 @@ const fs = require('fs');
 
 module.exports = function(app) {
 
-
     function addToDB(notes){
         notes = JSON.stringify(notes);
         fs.writeFileSync('./db/db.json', notes, function(err) {
